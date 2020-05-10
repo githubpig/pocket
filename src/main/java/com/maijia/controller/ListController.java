@@ -1,14 +1,22 @@
 package com.maijia.controller;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+
+import javax.websocket.server.PathParam;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.maijia.model.Params;
+import com.maijia.dao.Params;
+import com.maijia.dao.account.UserProjectMapper;
 import com.maijia.model.Project;
+import com.maijia.model.UserProject;
 import com.maijia.service.project.IProjectService;
 
 
@@ -19,6 +27,38 @@ public class ListController {
 	@Autowired
 	private IProjectService projectService;
 	
+	@Autowired
+	private UserProjectMapper userProjectMapper;
+	//userproject
+	@RequestMapping("/userproject")
+	public ModelAndView userproject(@RequestParam("id") String id){
+		List<UserProject> userProjects = userProjectMapper.selectUserProject(id);
+		List<HashMap<String,Object>> list =new ArrayList<HashMap<String,Object>>();
+		for(UserProject up:userProjects){
+			HashMap<String, Object> map = new HashMap<>();
+			map.put("money", up.getBenmoney());
+			Project project=projectService.queryId(Integer.parseInt(up.getProjectid()));
+			map.put("name", project.getName());
+			map.put("rate",project.getRate());
+			map.put("duo",new BigDecimal(up.getCurrentmoney()).subtract(up.getBenmoney()));
+			list.add(map);
+		}
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("userproject");
+		modelAndView.addObject("ups",list);
+		return modelAndView;
+	}
+	
+	
+	@RequestMapping("/projectinfo")
+	public ModelAndView projectinfo(@RequestParam("id") int id){
+		Project project = projectService.queryId(id);
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("projectinfo");
+		modelAndView.addObject("p",project);
+		modelAndView.addObject("pid",id);
+		return modelAndView;
+	}
 	
 	@RequestMapping("/contentlist/template")
 	public ModelAndView template(Params params){
@@ -28,7 +68,6 @@ public class ListController {
 		List<Project> ps = projectService.queryPageProjects(params);
 		modelAndView.setViewName("contentlist/template");
 		modelAndView.addObject("ps",ps);
-		
 		return modelAndView;
 	}
 	

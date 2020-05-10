@@ -104,9 +104,9 @@ a.btn:hover:before{transform: scale(1, 1); -webkit-transform: scale(1, 1);-moz-t
 	opacity: 0.5;
 	filter:alpha(opacity=50);
 }
-
-
-
+.l {
+    float: left;
+}
 /*
  *����ͷ
 */

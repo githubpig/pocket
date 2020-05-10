@@ -1,0 +1,31 @@
+.clear:after {
+	content: '\20';
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/*右则*/
+.right_servers_box{display: none;}
+.tool{position: fixed; right: 3px; top: 180px; width:43px; cursor: pointer; z-index:99; }
+/*.tool-layer{position: fixed;  right: 0; top: 0; height: 100%; width: 2px;  background: #fff; z-index: 50;}*/
+.tool .t-box{width: 24px; overflow: visible; height: 38px; display: block; margin-top: 5px;  text-align: center; padding: 6px  10px 0; line-height: 17px; font-size: 12px;  border: 1px solid #E5E5E5; background: #fff url("../images/right-bar.png-v=20150611001.png")/*tpa=http://jsg1.5.hengjihr.com/statics/images/skins/images/right-bar.png?v=20150611001*/; line-height:200px; overflow:hidden }
+.tool .t-box:hover{background: #ffc800; color: #fff; line-height: normal; }
+.tool .t1{background-position: 4px 11px;}
+.tool .t2{background-position: 5px -43px;}
+.tool .t3{background-position: 1px -355px;position: relative;}
+.tool .t3 ul, .tool .t4 ul{width: 176px;height: 44px; position: absolute; left: 0px; top: -1px; background: #ffc800; border: 1px solid #E5E5E5; border-right: none; z-index: 1;}
+.tool .t4 ul{width: 88px;}
+.tool .t3 ul li, .tool .t4 ul li{float: left; width: 44px; height: 44px; background: url("../images/right-bar.png-v=20150611001.png")/*tpa=http://jsg1.5.hengjihr.com/statics/images/skins/images/right-bar.png?v=20150611001*/;  position: relative;}
+.tool .t3 .t3-1{background-position: 2px -95px ;}
+.tool .t3 .t3-2{background-position: 0px -148px; }
+.tool .t3 .t3-3{background-position: 0px -207px; }
+.tool .t3 .t3-4{background-position: 2px -280px; }
+.tool .t4{background-position: 1px -573px;position: relative; }
+.tool .t4 .t4-1{background-position: 2px -504px ;}
+.tool .t4 .t4-2{background-position: 0px -429px ;}
+.tool .t5{background-position: -1px -652px; }
+.tool .text-box{position: absolute; z-index: 10; display:block;  width: 24px; height: 40px; text-align: center;  padding: 4px 10px  0;  color: #fff; background:#FFC800;   left: 0; top: 0;}
+.tool .tip-box{height: 20px; width: 74px; left: 50%; margin-left: -44px; text-align: center; display: block; padding: 0 6px; line-height: 20px; background:#fafafa ; border: 1px solid #E5E5E5; border-radius: 3px; -webkit-border-radius: 3px;-webkit-border-radius: 3px; position: absolute; color: #666; bottom: -25px; z-index: 20;  display: none;}
+.tool .t-box ul li a{ width: 44px; height: 44px;  display: block; position: absolute; top: 0; left:0  ; z-index: 21;  }
+/*.tool .text-box:hover{background: }*/

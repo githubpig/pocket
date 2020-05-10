@@ -1,0 +1,16 @@
+@import url("css/baiyibao.css")/*tpa=http://jsg1.5.hengjihr.com/statics/images/skins/css/baiyibao.css*/;
+@import url("css/form.css")/*tpa=http://jsg1.5.hengjihr.com/statics/images/skins/css/form.css*/;
+@import url("css/index.css")/*tpa=http://jsg1.5.hengjihr.com/statics/images/skins/css/index.css*/;
+@import url("css/detail.css")/*tpa=http://jsg1.5.hengjihr.com/statics/images/skins/css/detail.css*/;
+@import url("css/page.css")/*tpa=http://jsg1.5.hengjihr.com/statics/images/skins/css/page.css*/;
+@import url("css/user.css")/*tpa=http://jsg1.5.hengjihr.com/statics/images/skins/css/user.css*/;
+@import url("css/kefu.css")/*tpa=http://jsg1.5.hengjihr.com/statics/images/skins/css/kefu.css*/;
+
+
+.login_reg{text-align:center;font-size:15px;color:#fff; float:right;}
+.login_reg a{width: 60px; height: 27px; border-radius:5px; line-height: 27px; margin-left: 10px; background: none; display:inline-block;font-size:15px; color:#FFF}
+.login_reg a.link1{color: #ffffff; border: 2px solid #ffffff;text-decoration: none;}
+.login_reg a.link1:hover{background:#F5CDDA;border: 2px solid #ffffff; color:#333;}
+.login_reg a.link2{color: #ffffff; text-decoration:none; border: 2px solid #ffffff;}
+.login_reg a.link2:hover{background: #ff5943;border: 2px solid #ffffff;color:#fff;}
+.b12{ color:#FFF}

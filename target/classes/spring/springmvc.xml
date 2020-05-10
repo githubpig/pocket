@@ -30,6 +30,7 @@
 	<mvc:resources location="/WEB-INF/statics/" mapping="/statics/**"/>
 	<mvc:resources location="/WEB-INF/uploadfile/" mapping="/uploadfile/**"/>
 	<mvc:resources location="/WEB-INF/sg/" mapping="/sg/**"/>
+	<mvc:resources location="/WEB-INF/images/" mapping="/images/**"/>
 	<!-- 定义文件上传解析器 -->
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">

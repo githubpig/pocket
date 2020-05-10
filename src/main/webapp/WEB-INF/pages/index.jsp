@@ -18,35 +18,7 @@
 	</head>
 
 	<body>
-		<div class="ctop_box wbox12 relative z500">
-			<div class="ctop_con w1200 clearfix">
-				<div class="ctop_left fl">
-					<a class="contact"><i class="bg20 phone"></i>全国热线电话：4006-715-901</a>
-					<!--a target="_blank" href=""><i class="bg20 group"></i>QQ：</a-->
-				</div>
-				<div class="ctop_right fr clearfix">
-					<a href="/user-qian" class="border ">【签到】</a>
-					<a href="/user-login" class="border">【登录】</a>
-					<a href="/user-register" class="border border-r">【注册】</a>
-
-				</div>
-			</div>
-		</div>
-
-		<!--logo and nav-->
-		<div class="wbox12 ctop_nav relative z20">
-			<div class="w1200 ctop_navCon clearfix relative">
-
-				<div class="logo fl">
-					<a href="/index.php"><img src="${basePath}/css/logo.png" alt=""></a>
-				</div>
-				<div class="nav fr relative">
-					<ul class="clearfix relative z50">
-						<%@include file="nav.jsp"%>
-					</ul>
-				</div>
-			</div>
-		</div>
+		<%@include file="nav.jsp"%>
 
 		<link rel="stylesheet" href="./statics/dmx/css/index.min.css" />
 		<link rel="stylesheet" href="./css/tf.css" />
@@ -340,7 +312,7 @@
 							<div class="bd_content"><em>100%</em>本息保障 聪明人的选择</div>
 							<div>
 								<div class="sub01">
-									<a href="/user-login" style="color:#fff">登陆</a>
+									<a href="${basePath}/user-login" style="color:#fff">登陆</a>
 								</div>
 								<div class="sub02">
 									<a href="/user-register">注册</a>
@@ -452,7 +424,7 @@
 	
 												</div>
 											</div>
-											<a style="display:block;color:#fff" href="/index.php?id=${p.id}" class="button">立即投资</a>
+											<a style="display:block;color:#fff" href="${basePath}/projectinfo?id=${p.id}" class="button">立即投资</a>
 										</div>
 									</li>
 								</c:forEach>
@@ -489,7 +461,7 @@
 	
 												</div>
 											</div>
-											<a style="display:block;color:#fff" href="/index.php?id=${p.id}" class="button">立即投资</a>
+											<a style="display:block;color:#fff" href="${basePath}/projectinfo?id=${p.id}" class="button">立即投资</a>
 										</div>
 									</li>
 								</c:forEach>
@@ -528,7 +500,7 @@
 	
 												</div>
 											</div>
-											<a style="display:block;color:#fff" href="/index.php?id=${p.id}" class="button">立即投资</a>
+											<a style="display:block;color:#fff" href="${basePath}/projectinfo?id=${p.id}" class="button">立即投资</a>
 										</div>
 									</li>
 								</c:forEach>

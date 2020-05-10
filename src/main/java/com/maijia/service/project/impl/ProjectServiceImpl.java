@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.maijia.dao.Params;
 import com.maijia.dao.project.IProjectMapper;
-import com.maijia.model.Params;
 import com.maijia.model.Project;
 import com.maijia.service.project.IProjectService;
 

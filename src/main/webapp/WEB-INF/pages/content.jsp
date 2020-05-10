@@ -1,11 +1,12 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
+<%@include file="taglib.jsp"%>
 <!DOCTYPE html>
 <html>
 <head lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="renderer" content="webkit"/>
-<title>安全保障 - 敏博投资-专业的互联网金融平台</title>
+<title>安全保障</title>
 <script src="${basePath}/statics/dmx/js/jquery-1.11.3.js"></script>
 <script src="${basePath}/statics/js/jquery.min.js"></script>
 <script src="${basePath}/statics/dmx/js/jquery.circliful.min.js"></script>
@@ -16,39 +17,7 @@
 </head>
 <body>
 
-<div class="ctop_box wbox12 relative z500">
-	<div class="ctop_con w1200 clearfix">
-		<div class="ctop_left fl">
-			<a class="contact"><i class="bg20 phone"></i>全国热线电话：4006-715-901</a>
-			<!--a target="_blank" href=""><i class="bg20 group"></i>QQ：</a-->
-		</div>
-		<div class="ctop_right fr clearfix">
-			 			  				<a href="/user-qian" class="border ">【签到】</a>					 
-				<a href="/user-login" class="border">【登录】</a>
-				<a href="/user-register" class="border border-r">【注册】</a>
-
-
-			
-		</div>
-	</div>
-</div>
-
-<!--logo and nav-->
-<div class="wbox12 ctop_nav relative z20">
-	<div class="w1200 ctop_navCon clearfix relative">
-
-		<div class="logo fl">
-			<a href="/index.php"><img src="${basePath}\css\logo.png" alt=""></a>
-		</div>
-		<div class="nav fr relative">
-			
-			<ul class="clearfix relative z50">
-		<%@include file="nav.jsp"%>	              			
-			</ul>
-		</div>
-	</div>
-</div>
-
+<%@include file="nav.jsp"%>
 
 
 	<script type="text/javascript">document.getElementById("menu3").className=" active";</script>

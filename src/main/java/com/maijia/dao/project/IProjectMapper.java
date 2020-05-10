@@ -2,7 +2,7 @@ package com.maijia.dao.project;
 
 import java.util.List;
 
-import com.maijia.model.Params;
+import com.maijia.dao.Params;
 import com.maijia.model.Project;
 
 

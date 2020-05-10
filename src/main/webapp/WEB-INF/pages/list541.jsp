@@ -22,38 +22,7 @@
 </head>
 <body>
 
-<div class="ctop_box wbox12 relative z500">
-	<div class="ctop_con w1200 clearfix">
-		<div class="ctop_left fl">
-			<a class="contact"><i class="bg20 phone"></i>全国热线电话：4006-715-901</a>
-			<!--a target="_blank" href=""><i class="bg20 group"></i>QQ：</a-->
-		</div>
-		<div class="ctop_right fr clearfix">
-			 			  				<a href="user-login.htm" tppabs="http://jsg1.5.hengjihr.com/user-qian" class="border ">【签到】</a>					 
-				<a href="user-login.htm" tppabs="http://jsg1.5.hengjihr.com/user-login" class="border">【登录】</a>
-				<a href="user-register.htm" tppabs="http://jsg1.5.hengjihr.com/user-register" class="border border-r">【注册】</a>
-
-
-			
-		</div>
-	</div>
-</div>
-
-<!--logo and nav-->
-<div class="wbox12 ctop_nav relative z20">
-	<div class="w1200 ctop_navCon clearfix relative">
-
-		<div class="logo fl">
-			<a href="index.php.htm" tppabs="http://jsg1.5.hengjihr.com/index.php"><img src="${basePath}/css/logo.png" tppabs="http://jsg1.5.hengjihr.com/css/logo.png" alt=""></a>
-		</div>
-		<div class="nav fr relative">
-			
-	<ul class="clearfix relative z50">
-						<%@include file="nav.jsp"%>
-					</ul>
-		</div>
-	</div>
-</div>
+<%@include file="nav.jsp"%>
 
 
 

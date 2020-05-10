@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.maijia.model.Params;
+import com.maijia.dao.Params;
 import com.maijia.model.Project;
 import com.maijia.service.project.IProjectService;
 
@@ -18,6 +18,11 @@ public class indexController {
 	@Autowired
 	private IProjectService projectService;
 	
+	
+	@RequestMapping("/user-register")
+	public String userRegister(){
+		return "user-register";
+	}
 	@RequestMapping("/index")
 	public ModelAndView index(){
 		Params params = new Params();
